@@ -51,9 +51,9 @@
     <!--/Tags Header Embed Code-->
  
  <script>
-  var login_user = document.getElementById("login").value;
+  var login_user = document.getElementByName("Login").value;
   var logout_user = document.getElementById("logout").value;
-  if(login_user!=" ")
+  if(login_user=="Login")
   {
    logout_user.style.display = "block";
    login_user.style.display = "none";
