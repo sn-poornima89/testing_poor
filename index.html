@@ -51,10 +51,15 @@
     <!--/Tags Header Embed Code-->
  
  <script>
-  var example = 'this is an example';
-if(isset(example)){
-    console.log('the example variable has a value set');
-}
+  var login_user = document.getElementById("login").value;
+  var logout_user = document.getElementById("logout").value;
+  if(login_user=="login")
+  {
+   logout_user.style.display = "block";
+   login_user.style.display = "none";
+   
+  }
+
  </script>
 
   </head>
@@ -79,7 +84,9 @@ if(isset(example)){
           <span style="float:left;margin-right: 10px;">Sign in |</span>
          <input type="radio" value="Gold" name="login_type" style="width:auto;" /><span style="float:left;margin-right: 10px;">Gold</span>
           <input type="radio" value="Silver" name="login_type" style="width:auto;" /><span style="float:left;margin-right: 10px;">Silver</span>
-          <input type="submit" name="Login" id="login" value="Login" style="width:auto;" />
+          <input type="hidden" id="mylogin" value="poo_login">
+          <input type="submit" name="Login" id="login" value="Login" style="width:auto;" style="disply:block;" />
+         <input type="submit" name="Logout" id="logout" value="Logout" style="width:auto;" style="disply:none;" />
         </fieldset>
       </form>
     </div>
