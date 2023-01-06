@@ -29,20 +29,17 @@
      //var member=['','gold','silver'];    
      
      function getInputValue() {
-        // Selecting the input element and get its value 
-        //var member_type= document.getElementByName("login_type").value;
+        // Selecting the input element and get its value
       var member_type = document.querySelector('input[name = login_type]:checked').value;
         // Displaying the value
         alert(member_type);
       }
      
-    // var member_type= document.getElementByName("login_type").value;
-     
      var digitalData = {
         "page": {
             "pageInfo" : {
                 "pageName": "Home",
-                "membertype": "gold"
+                "membertype": "member_type"
                 }
             }
     };
