@@ -26,14 +26,19 @@
   
   <!--Data Layer to enable rich data collection and targeting-->
     <script>
+     var member=['','gold','silver'];    
+     
     var digitalData = {
         "page": {
             "pageInfo" : {
                 "pageName": "Home"
                 }
+           "member-type":{
+               "member": document.getElementByName("login_type").value;
+        }
             }
     };
-     var member=['','gold','silver'];
+     
     </script>
     <!--/Data Layer-->
   
