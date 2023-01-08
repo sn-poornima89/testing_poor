@@ -27,7 +27,7 @@
   <!--Data Layer to enable rich data collection and targeting-->
  
     <script>
-     targetPageParams = function() { 
+    /* targetPageParams = function() { 
       return { 
         "a": 1, 
         "b": 2, 
@@ -38,17 +38,18 @@
                                 } 
                   } 
       }; 
-    }; 
+    }; */
      
-     //var member=['','gold','silver'];    
-     
-     function getInputValue() {
+   /*  function getInputValue() {
         // Selecting the input element and get its value
       var member_type = document.querySelector('input[name = login_type]:checked').value;
         // Displaying the value
         alert(member_type);
-      }
-     //var member_type = document.querySelector('input[name = login_type]:checked').value;
+      } */
+     
+     var member=['','gold','silver'];    
+     
+     
      
      var digitalData = {
         "page": {
@@ -57,6 +58,9 @@
                 "membertype": "gold"
                 }
             }
+       "profile": {
+                "memberShipType": Member[Math.floor((Math.random() * 3))],
+            },
     };
      
      
