@@ -40,7 +40,7 @@
     
     function getInputValue() {
         // Selecting the input element and get its value
-      var member_type = document.querySelector('input[name = login_type]:checked').value;
+     // var member_type = document.querySelector('input[name = login_type]:checked').value;
         // Displaying the value
         alert(member_type);
       } 
@@ -54,7 +54,7 @@
                 }
             },
        "profile": {
-                "memberShipType": member[Math.floor((Math.random() * 3))],
+                "memberShipType": document.querySelector('input[name = login_type]:checked').value,
             },
     };
   </script>  
