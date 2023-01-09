@@ -40,12 +40,12 @@
     
     function getInputValue() {
         // Selecting the input element and get its value
-     // var member_type = document.querySelector('input[name = login_type]:checked').value;
+      var member_type = document.querySelector('input[name = login_type]:checked').value;
         // Displaying the value
         alert(member_type);
       } 
-    var member = document.querySelector('input[name = login_type]:checked').value;
-   // var member=['','gold','silver'];      
+    //var member = document.querySelector('input[name = login_type]:checked').value;
+    var member=['','gold','silver'];      
      var digitalData = {
         "page": {
             "pageInfo" : {
@@ -54,7 +54,7 @@
                 }
             },
        "profile": {
-                "memberShipType": document.querySelector('input[name = login_type]:checked').value,
+                "memberShipType": member[Math.floor((Math.random() * 3))],
             },
     };
   </script>  
