@@ -27,7 +27,18 @@
   <!--Data Layer to enable rich data collection and targeting-->
  
     <script>
- function targetPageParamsAll() { return "profile.membertype_poo=gold"; }
+ targetPageParamsAll = function() { 
+  return { 
+    "a": 1, 
+    "b": 2, 
+    "profile": { 
+        "age": 26, 
+        "country": { 
+          "city": "San Francisco" 
+        } 
+      } 
+  }; 
+};
     /* var member=['','gold','silver']; 
      var loginStatus=['guest','loggedIn'];
      var digitalData = {
