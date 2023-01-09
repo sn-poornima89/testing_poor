@@ -27,7 +27,20 @@
   <!--Data Layer to enable rich data collection and targeting-->
  
     <script>
- targetPageParamsAll = function() { 
+     
+     targetPageParamsAll = function() { 
+  return { 
+    "a": 1, 
+    "b": 2, 
+    "profile": { 
+        "age": 26, 
+        "country": { 
+          "city": "San Francisco" 
+        } 
+      } 
+  }; 
+};
+/* targetPageParamsAll = function() { 
   return { 
     "profile": { 
         "pagename": "home", 
@@ -37,7 +50,7 @@
         } 
       } 
   }; 
-};
+}; */
     /* var member=['','gold','silver']; 
      var loginStatus=['guest','loggedIn'];
      var digitalData = {
