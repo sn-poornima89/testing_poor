@@ -27,19 +27,7 @@
   <!--Data Layer to enable rich data collection and targeting-->
  
     <script>
- targetPageParams = function() { 
-  return { 
-    "a": 1, 
-    "b": 2, 
-    "profile": { 
-                  "memberStatus": Gold, 
-                  "country": { 
-                                "city": "San Francisco" 
-                            } 
-              } 
-  }; 
-}; 
-     
+ function targetPageParamsAll() { return "profile.membertype=gold"; }
     /* var member=['','gold','silver']; 
      var loginStatus=['guest','loggedIn'];
      var digitalData = {
