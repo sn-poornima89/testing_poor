@@ -38,7 +38,16 @@
   
   <script>
     
-    function getInputValue() {
+    targetPageParamsAll = function() { 
+      return { 
+        "pagename": "home", 
+        "profile": { 
+            "membertype_poo": "silver"  
+          } 
+      }; 
+    }; 
+    
+   /* function getInputValue() {
         // Selecting the input element and get its value
       var member_type = document.querySelector('input[name = login_type]:checked').value;
         // Displaying the value
@@ -60,7 +69,7 @@
        "customer": {
                 "loginStatus": loginStatus[Math.floor((Math.random() * 2))],
             },
-    };
+    }; */
   </script>  
   
 </head>
