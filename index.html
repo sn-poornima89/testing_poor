@@ -28,18 +28,7 @@
  
     <script>
      
-   /*  targetPageParamsAll = function() { 
-  return { 
-    "a": 1, 
-    "b": 2, 
-    "profile": { 
-        "age": 26, 
-        "country": { 
-          "city": "San Francisco" 
-        } 
-      } 
-  }; 
-}; */
+   
  targetPageParamsAll = function() { 
   return { 
     "pagename": "home",
@@ -48,6 +37,24 @@
       }    
   }; 
 }; 
+     
+     var digitalData = {
+        "page": {
+            "pageInfo" : {
+                "orderId":123,
+                "cartTotal":5000
+                }
+            },
+          "cart":{
+            "cartEntries" : {
+              "p1" : 1,
+              "p2" : 3,
+              "p3" : 5
+            }
+          
+          }
+    };
+     
     /* var member=['','gold','silver']; 
      var loginStatus=['guest','loggedIn'];
      var digitalData = {
