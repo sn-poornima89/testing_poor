@@ -36,17 +36,22 @@
     <!--/Tags Header Embed Code-->
   
   <script>
-    targetPageParamsAll = function() { 
-      return { 
-        "pagename": "home", 
-        "orderId":"123",
-        "orderTotal":"5000" ,
-       "productPurchasedId" :"321",
-        "profile": { 
-            "membertype_poo": "gold"  
-          }    
-      }; 
-    }; 
+   var digitalData = {
+        "page": {
+            "pageInfo" : {
+                "orderId":123,
+                "cartTotal":5000
+                }
+            },
+          "cart":{
+            "cartEntries" : {
+              "p1" : 1,
+              "p2" : 3,
+              "p3" : 5
+            }
+          
+          }
+    };
     
     /*var member=['','gold','silver'];    
      var digitalData = {
