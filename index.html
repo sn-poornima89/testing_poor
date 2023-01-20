@@ -25,6 +25,16 @@
     <!--/Preconnect and DNS-Prefetch-->
   
   <!--Data Layer to enable rich data collection and targeting-->
+	
+	<script>
+					document.getElementById('submit').onclick=function(){
+						window.customerID = document.getElementsByTagName('form')[0].getElementsByTagName('input')[0].value;
+						//document.cookie = "customerId="+customerID+"";
+						// window.location.assign("https://sn-poornima89.github.io/testing_poor/index.html")
+					} 
+					</script>
+ 
+	
  
     <script>
      
@@ -38,7 +48,8 @@
       }    
   }; 
 }; 
-     
+     var customerID = document.getElementsByTagName('form')[0].getElementsByTagName('input')[0].value;
+	    
      var digitalData = {
         "page": {
             "pageInfo" : {
@@ -46,6 +57,9 @@
                 "cartTotal":5000
                 }
             },
+	  "customer":{   
+	      "customerId":document.getElementsByTagName('form')[0].getElementsByTagName('input')[0].value;
+	  },
           "cart":{
             "cartEntries" : {
               "p1" : 1,
@@ -279,11 +293,11 @@
 </body>
  
  <script>
-					document.getElementById('submit').onclick=function(){
+					/*document.getElementById('submit').onclick=function(){
 						window.customerID = document.getElementsByTagName('form')[0].getElementsByTagName('input')[0].value;
 						document.cookie = "customerId="+customerID+"";
 						 window.location.assign("https://sn-poornima89.github.io/testing_poor/index.html")
-					}
+					} */
 					</script>
  
 </html>
