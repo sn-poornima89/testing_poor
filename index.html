@@ -122,22 +122,12 @@
       </ul>
     </div>
     <div id="search">
-      <!--<form>
-        <fieldset>
-          <span style="float:left;margin-right: 10px;">Sign in |</span>
-         <input type="radio" value="Gold" name="login_type" style="width:auto;" /><span style="float:left;margin-right: 10px;">Gold</span>
-          <input type="radio" value="Silver" name="login_type" style="width:auto;" /><span style="float:left;margin-right: 10px;">Silver</span>
-          
-          <input type="button" name="Login" id="login" value="Login" onclick="getInputValue();" style="width:auto;disply:block;" />
-         
-        </fieldset>
-      </form>-->
+      
      <form>
         <fieldset>
           <span style="float:left;margin-right: 10px;">Customer ID </span>
           <input type="text" name="custID" id="customerId" style="width:auto;" required>
-          <input type="button" name="Login" id="submit" value="Login" style="width:auto;" />
-         
+          <input type="submit" name="Login" id="submit" value="Login" style="width:auto;" />
         </fieldset>
       </form>
     </div>
@@ -287,4 +277,12 @@
   </div>
 </div>
 </body>
+ 
+ <script>
+					document.getElementById('submit').onclick=function(){
+						window.customerID = document.getElementsByTagName('form')[0].getElementsByTagName('input')[0].value;
+						document.cookie = "customerId="+customerID+"";
+					}
+					</script>
+ 
 </html>
